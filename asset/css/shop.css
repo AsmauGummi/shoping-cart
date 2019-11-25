@@ -1,0 +1,88 @@
+body{
+    width: 95vw;
+    background-color: #f5f3ff;
+}
+.side-bar{
+    background-color: #5c4d74;
+    height: 150vh;
+}
+.shopping-cart-text{
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+.xty{
+    display: inline-block;
+    
+}
+.img{
+    margin-left: 5px;
+    height: 200px;
+    width: 200px;
+}
+.btn{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #5c4d74;
+     font-weight:bold ;
+
+}
+.small-line{
+    width: 180px;
+    background-color: gray;
+}
+.full-bar{
+    background-color: #f5f3ff;
+}
+.empty-top{
+    height: 30px;
+    width: 80%;
+    background-color: #5c4d74;
+    margin-top: 3px;
+
+}
+.form-control{
+    margin-top: 5px;
+    width: 20%;
+    margin-top: 150px;
+}
+.item{
+    margin-left: 150px;
+}
+.items{
+
+    width: 1o0%;
+    background-color: white;
+    margin-left: 30%;
+    color: #5c4d74;
+    font-weight: bold;
+
+}
+.add-cart{
+    color: #5c4d74;
+    font-weight: bold;
+    margin-left: 60%;
+    margin-bottom: 5px;
+}
+.remove-button{
+    color: #5c4d74;
+}
+.quantity{
+    margin-left: 100px;
+    height: 50px;
+}
+input{
+    width: 30px;
+}
+@media only sreen and (min-width: 600px) }
+
+}
+p{
+    margin-left: 20%;
+}
+.quantity{
+    margin-left: 100px;
+}
+input{
+    width: 15px;
+}
