@@ -4,7 +4,7 @@ body{
 }
 .side-bar{
     background-color: #5c4d74;
-    height: 150vh;
+    height: 100vh;
 }
 .shopping-cart-text{
     color: white;
@@ -38,22 +38,23 @@ body{
     height: 30px;
     width: 80%;
     background-color: #5c4d74;
-    margin-top: 3px;
+    margin-top: 2px;
+    margin-left: 2%;
 
 }
 .form-control{
     margin-top: 5px;
     width: 20%;
-    margin-top: 150px;
+    margin-left:15px;
 }
 .item{
     margin-left: 150px;
 }
 .items{
 
-    width: 1o0%;
+    width: 80%;
     background-color: white;
-    margin-left: 30%;
+    margin-left: 2%;
     color: #5c4d74;
     font-weight: bold;
 
@@ -61,7 +62,7 @@ body{
 .add-cart{
     color: #5c4d74;
     font-weight: bold;
-    margin-left: 60%;
+    margin-left: 70%;
     margin-bottom: 5px;
 }
 .remove-button{
@@ -74,15 +75,14 @@ body{
 input{
     width: 30px;
 }
-@media only sreen and (min-width: 600px) }
-
+.price{
+    margin-left: 40px;
 }
 p{
-    margin-left: 20%;
+    margin-left: 40%;
 }
+
 .quantity{
     margin-left: 100px;
-}
-input{
-    width: 15px;
+    height: 50px;
 }

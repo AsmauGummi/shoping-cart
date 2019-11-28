@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -13,7 +12,6 @@
         <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
         <link rel="stylesheet" href="./asset/css/shop.css">
         <link rel="stylesheet" href="./asset/css/animate.css">
-       
     </head>
     <body>
         <div class="row">
@@ -22,69 +20,86 @@
                     <div class="shopping cart-text">
                         <h3>shopping cart</h3>
                    </div>
-                  <hr class="small-line"/>
-                  <img class="img" src="./asset/image/8_-_Shopping_Cart-128.png">
-                  <button type="button" class="btn btn-light">
-                    view shopping cart
-                  </button>
+                    <hr class="small-line"/>
+                    <img class="img" src="./asset/image/8_-_Shopping_Cart-128.png" height="140px" width="140px">
+                    <button onclick="changeView()" id="changeTxt" type="button" class="btn btn-light"> view shopping cart </button>
+                    <hr class="small-line"/>
                  </div>
-                 
             </div>
-                
-            <div class="col-md-10 full-bar">
 
-                <form>
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"><span></span><label></label>
-                        <button class="btn btn-outline-info my-2 my-1g-0" type="submit">Search</button>
-                </form>
+
+            <div class="col-md-10 full-bar">
+                <input class="xty form-control mr-sm-2" type="search" 
+                placeholder="Search" aria-label="Search"/>
+                
+                <span class="fas fa-search"></span>
+                <hr>            
+                
             
-             <div class="empty-top"></div>
-            <div class="item">
-                <p>Item name: T-shirt <spam class="quantity"><label> Quantity:<input type="text"</p>
-                <P>Price:<span class="price animated flash infinite">N6000</span></P>
-                <button class="add-cart animated bounce infinite">add to cart</button>
-                <hr>
-                <p>Item name: Dress <spam class="quantity"><label>Quantity: <input type="text"></p>
-                        <p>price:<span class="price animated flash infinite">N8000</span></p>
-                        <button class="add-cart animated bounce infinite">add to cart</button>
-                        <hr>    
-                        <p>Item name: short<spam class="quantity"><lebel>Quantity: <input type="text"></p>
-                        <p>price:<span class="price animated flash infinite">N4000</span></p>
-                        <button class="add-cart animated bounce infinite">add to cart</button>
-                        <hr>
-                            <p>Item name: jeans<spam class="quantity"><label>Quantity: <input type="text"></p>
-                            <P>price:<span class="price animated flash infinite">N7000</span></P>
-                            <button class="add-cart animated bounce infinite">add to cart</button>
-                            <div class="empty-top"></div>
-                            <div class="items">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th class="remove-button" scope="col">Item Name</th>
-                                            <th class="remove-button" scope="col">Price</th>
-                                            <th class="remove-button" scope="col">Quantity</th>
-                                        </tr>
-                                    </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Dress</td>
-                                                <td>8000</td>
-                                                <td>2</td>
-                                                <td class="remove-button">REMOVE</td>
-                                            </tr>
-                                            <tr>
-                                                <td>short</td>
-                                                <td>4000</td>
-                                                <td>1</td>
-                                                <td class="remove button">REMOVE</td>
-                                            </tr>
-                                        </tbody>
-                                </table> 
-                                    
-                            </div>
-                        </div>
-                    </div>
-                                
         
+        
+        
+        
+                
+                
+                
+                
+                
+        <div id="viewShoppingCart">
+        <div class="empty-top"></div>
+        <div class="item">
+            <p>Item name: T-shirt <span class="quantity"><label> Quantity:</label><input type="text"></span></p>
+            <P>Price:<span class="price animated flash infinite">N6000</span></P>
+            <button class="add-cart animated bounce infinite">add to cart</button>
+            <hr>
+            <p>Item name: Dress <span class="quantity"><label>Quantity:</label><input type="text"></span></p>
+            <p>price:<span class="price animated flash infinite">N8000</span></p>
+            <button class="add-cart animated bounce infinite">add to cart</button>
+            <hr>    
+            <p>Item name: short<span class="quantity"><lebel>Quantity:</lebel><input type="text"></span></p>
+            <p>price:<span class="price animated flash infinite">N4000</span></p>
+            <button class="add-cart animated bounce infinite">add to cart</button>
+            <hr>
+            <p>Item name: jeans<span class="quantity"><label>Quantity:</label><input type="text"></span></p>
+            <P>price:<span class="price animated flash infinite">N7000</span></P>
+            <button class="add-cart animated bounce infinite">add to cart</button>
+        </div>
+        </div>    
+                            
+        <div id="selectShoppingCart">
+        <div class="empty-top"></div>
+        <div class="items">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="remove-button" scope="col">Item Name</th>
+                        <th class="remove-button" scope="col">Price</th>
+                        <th class="remove-button" scope="col">Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dress</td>
+                        <td>8000</td>
+                        <td>2</td>
+                        <td class="remove-button">REMOVE</td>
+                    </tr>
+                    <tr>
+                        <td>short</td>
+                        <td>4000</td>
+                        <td>1</td>
+                        <td class="remove button">REMOVE</td>
+                    </tr>
+                </tbody>
+            </table> 
+                                    
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <script src="./asset/js/cart.js"></script>
+                    
+
     </body>
 </html>
