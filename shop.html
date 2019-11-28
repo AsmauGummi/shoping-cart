@@ -14,15 +14,16 @@
         <link rel="stylesheet" href="./asset/css/animate.css">
     </head>
     <body>
-        <div class="row">
+        <div class="row" id="app">
             <div class="col-md-2 side-bar">
                 <div class="side">
                     <div class="shopping cart-text">
-                        <h3>shopping cart</h3>
+                        <h3>{{ title }}</h3>
                    </div>
                     <hr class="small-line"/>
                     <img class="img" src="./asset/image/8_-_Shopping_Cart-128.png" height="140px" width="140px">
-                    <button onclick="changeView()" id="changeTxt" type="button" class="btn btn-light"> view shopping cart </button>
+                    <button 
+                    @click="changeView()" id="changeTxt" type="button" class="btn btn-light"> view shopping cart </button>
                     <hr class="small-line"/>
                  </div>
             </div>
@@ -46,8 +47,8 @@
                 
                 
         <div id="viewShoppingCart">
-        <div class="empty-top"></div>
-        <div class="item">
+        <div class="empty-top" v-if="showShoppingCart === false"></div>
+        <div class="items" v-if="showShoppingCart === false">
             <p>Item name: T-shirt <span class="quantity"><label> Quantity:</label><input type="text"></span></p>
             <P>Price:<span class="price animated flash infinite">N6000</span></P>
             <button class="add-cart animated bounce infinite">add to cart</button>
@@ -67,8 +68,8 @@
         </div>    
                             
         <div id="selectShoppingCart">
-        <div class="empty-top"></div>
-        <div class="items">
+        <div class="empty-top" v-if="showShoppingCart === true"></div>
+        <div class="items" v-if="showShoppingCart === true">
             <table class="table">
                 <thead>
                     <tr>
@@ -91,13 +92,14 @@
                         <td class="remove button">REMOVE</td>
                     </tr>
                 </tbody>
-            </table> 
+            </table>
+            <h2>total: {{total}}</h2> 
                                     
         </div>
         </div>
         </div>
         </div>
-
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="./asset/js/cart.js"></script>
                     
 
